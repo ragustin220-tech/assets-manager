@@ -37,8 +37,15 @@ public class Asset {
     }
 
     public BigDecimal getValue(){
-        return originalCost;
+        return this.originalCost;
     }
 
-
+    @Override
+    public String toString() {
+        return "Asset{" +
+                "description='" + description + '\'' +
+                ", dataAcquired='" + dataAcquired + '\'' +
+                ", originalCost=" + originalCost +
+                '}';
+    }
 }
